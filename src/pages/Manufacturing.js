@@ -41,8 +41,8 @@ function EnergyandResources() {
                 <WithUsWorking 
                     title="Our Range of Services"
                     col1={<img src={img2} className="img-fluid rounded "  alt="Delightful Dining" loading="lazy" />} 
-                    col2={<img src={img3} className="img-fluid" alt="Seamless Site Functionality" loading="lazy" />}
-                    col3={<img src={img1} className="img-fluid" alt="Total Workforce Support" loading="lazy" />} 
+                    col2={<img src={img3} className="img-fluid rounded" alt="Seamless Site Functionality" loading="lazy" />}
+                    col3={<img src={img1} className="img-fluid rounded" alt="Total Workforce Support" loading="lazy" />} 
                     head="Delightful Dining"
                     head1="Seamless Site Functionality" 
                     par1="At Fusion Spice, we provide a diverse range of food options to delight every palate, including globally inspired cuisines, hearty comfort foods, and classic favorites. Our commitment extends beyond variety to ensure comfort and satisfaction. With food trucks, micro markets, and popular fast-casual brands, we bring indulgence and enjoyment to your workforce, boosting morale and productivity."

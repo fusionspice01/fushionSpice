@@ -55,7 +55,7 @@ function Home() {
                                 <div className="col-lg-6 pb-5">
                                     <div className="section-title mb-60 text-center">
                                         <span className="wow fadeInUp" data-wow-delay=".2s">Testimonials</span>
-                                        <h1 className="wow display-3" data-wow-delay=".4s">What Our Users Says</h1>
+                                        <h1 className="wow display-3" data-wow-delay=".4s">What Our Client Says</h1>
                                     </div>
                                 </div>
                             </div>
@@ -64,69 +64,69 @@ function Home() {
                                     <div class="responsive-container-block blocks">
                                         <div class="responsive-cell-block wk-desk-1 wk-tab-1 wk-mobile-1 wk-ipadp-1 content">
                                             <p class="text-blk info-block">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                                            The food quality and variety are simply outstanding! The service is always prompt, and the staff is incredibly friendly. A must-try!
                                             </p>
                                             <div class="responsive-container-block person">
-                                                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 icon-block">
+                                                {/* <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 icon-block">
                                                     <img
                                                         className="profile-img"
                                                         src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors1.svg"
                                                         alt="Profile"
                                                     />
 
-                                                </div>
+                                                </div> */}
                                                 <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 text-block">
                                                     <p class="text-blk name">
-                                                        Jane Doe
+                                                    — Rajesh Mehta, 
                                                     </p>
                                                     <p class="text-blk desig">
-                                                        CEO
+                                                    Regular Customer
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="responsive-cell-block wk-desk-1 wk-tab-1 wk-mobile-1 wk-ipadp-1 content">
                                             <p class="text-blk info-block">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                                            We’ve partnered with them for our office canteen, and it’s been a game-changer. Our team loves the delicious, hygienic meals served every day!
                                             </p>
                                             <div class="responsive-container-block person">
-                                                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 icon-block">
+                                                {/* <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 icon-block">
                                                     <img
                                                         className="profile-img"
                                                         src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors1.svg"
                                                         alt="Profile"
                                                     />
 
-                                                </div>
+                                                </div> */}
                                                 <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 text-block">
                                                     <p class="text-blk name">
-                                                        Jane Doe
+                                                    — Priya Sharma, 
                                                     </p>
                                                     <p class="text-blk desig">
-                                                        CEO
+                                                    Regular Customer
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="responsive-cell-block wk-desk-1 wk-tab-1 wk-mobile-1 wk-ipadp-1 content bottom">
                                             <p class="text-blk info-block">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                                            From their diverse menu to their excellent service, everything is top-notch. They truly understand the importance of good food and customer satisfaction!
                                             </p>
                                             <div class="responsive-container-block person">
-                                                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 icon-block">
+                                                {/* <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 icon-block">
                                                     <img
                                                         className="profile-img"
                                                         src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors1.svg"
                                                         alt="Profile"
                                                     />
 
-                                                </div>
+                                                </div> */}
                                                 <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 text-block">
                                                     <p class="text-blk name">
-                                                        Jane Doe
+                                                    — Amit Verma,
                                                     </p>
                                                     <p class="text-blk desig">
-                                                        CEO
+                                                    Regular Customer
                                                     </p>
                                                 </div>
                                             </div>

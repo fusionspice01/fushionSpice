@@ -1,0 +1,931 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    background-color: #EEEDEB;
+}
+
+/* Typography */
+
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Navbar Styles */
+.bgbg {
+    background-color: #ff0000;
+}
+
+.nav_sticky {
+    z-index: 11111;
+}
+
+.nav-link:hover {
+    color: #df0707 !important; /* Bootstrap primary color for hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Makes the dropdown visible when hovered */
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: #EEEDEB; /* Smooth transition */
+}
+
+/* Scrollspy */
+.scrollspy-example {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    overflow-y: scroll;
+}
+
+.scrollspy-example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sections Styles */
+.mission-text, .safety-text, .about-text {
+    font-size: 1.25rem; /* Default font size for larger screens */
+}
+
+.mission-heading, .safety-heading {
+    font-size: 3rem; /* Default heading size for larger screens */
+}
+
+/* About Us Section */
+.about_text {
+    color: #ff0000;
+}
+
+/* Contact Page Styles */
+.B_CARD {
+    background-color: #EEEDEB;
+    min-height: 100px;
+}
+
+.contactus_text {
+    color: #f8a705;
+}
+
+.input-container {
+    position: relative;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FABC3F;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #e3bb09;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+}
+
+.button {
+    background: #FABC3F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .mission-text {
+        font-size: 1rem;
+    }
+
+    .mission-heading,
+    .safety-heading {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+
+    .fontsize_c {
+        font-size: 13px;
+    }
+
+    .sticky-social {
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .sticky-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .sticky-social a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+/* Client Section */
+.client_text {
+    color: #09c606;
+}
+
+/* Zoom In/Out */
+.zoom-out {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-out:hover {
+    transform: scale(0.8); /* Decrease the scale to zoom out */
+}
+
+.zoom-in {
+    transition: transform 0.4s ease-in-out;
+}
+
+.zoom-in:hover {
+    transform: scale(1.06); /* Increase the scale to zoom in */
+}
+
+/* Review Section */
+.icon_color {
+    color: #f1ce05;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  height: 70vh; /* You can adjust this value based on your design needs */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+/* Video Shadow for background */
+.video-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Shadow effect */
+  z-index: 1;
+}
+
+/* Ensures the video covers the entire container */
+.video-shadow video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Apply opacity to the video */
+.video-opacity {
+  opacity: 0.8; /* Slight opacity for the video */
+}
+
+/* Dark Glass Overlay */
+.glass-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2; /* Ensure overlay appears on top of the video */
+}
+
+/* Button container on top of the overlay */
+.glass-overlay .d-flex {
+  z-index: -1; /* Make sure the button is on top of the overlay */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* For tablets or medium screens */
+  .video-container {
+      height: 70vh; /* Reduce video height on smaller screens */
+  }
+
+  .video-opacity {
+      opacity: 0.9; /* Increase opacity for better contrast */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile screens */
+  .video-container {
+      height: 70vh; /* Reduce video height further on smaller screens */
+  }
+
+  .video-opacity {
+      opacity: 0.9; /* Slightly increased opacity for visibility */
+  }
+
+  .glass-overlay {
+      background: rgba(0, 0, 0, 0.6); /* Darker overlay on small screens */
+  }
+}
+
+
+
+/* Glass Overlay */
+.glass-overlay {
+    color: white;
+    z-index: 1;
+}
+
+/* Default styling for Logo */
+
+
+/* For screens smaller than 768px (tablets, mobile) */
+@media (max-width: 767px) {
+    .Logo_home_spices {
+        width: 40vh; /* Decrease width on smaller screens */
+    }
+}
+
+/* For screens larger than 768px but smaller than 1200px (small desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .Logo_home_spices {
+        width: 43vh; /* Adjust width for medium-sized screens */
+    }
+}
+
+/* For screens larger than 1200px (large desktops) */
+@media (min-width: 1200px) {
+    .Logo_home_spices {
+        width: 46vh; /* Default width for larger screens */
+    }
+}
+
+
+/* Home Button */
+.Home_button {
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #e2bc01;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.Home_button:hover {
+    background: #e2bc01;
+}
+
+.Home_button > svg {
+    width: 36px;
+    margin-left: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Home_button:hover svg {
+    transform: translateX(5px);
+}
+
+.Home_button:active {
+    transform: scale(0.95);
+}
+
+/* success section  */
+
+/* Initial blur effect */
+.blur {
+    filter: blur(10px);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  /* Remove blur when image is loaded */
+  .unblur {
+    filter: blur(0);
+  }
+
+
+  /* Card expertis  */
+ /* card */
+ .font_p {
+    font-size: 1.1rem; /* Default size */
+  }
+  
+  /* Media query for small screens (max width 768px) */
+  @media (max-width: 768px) {
+    .font_p {
+      font-size: 1rem; /* Slightly smaller font for tablets */
+    }
+  }
+  
+  /* Media query for extra small screens (max width 480px) */
+  @media (max-width: 480px) {
+    .font_p {
+      font-size: 0.8rem; /* Smaller font for mobile devices */
+    }
+  }
+  
+  .card_main p {
+    height: 70px;
+    /* font-size: 17px;
+    font-weight: 400; */
+    /* line-height: 20px; */
+    color: #000000;
+
+  }
+  
+  .card_main p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #e80c0c;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+.card1 {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    background-color: #EEEDEB;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #e80c0c;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(100);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(218, 9, 9, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #adb5bd;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+  
+  .card3:hover {
+    border: 1px solid #adb5bd;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  
+  .card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  
+  .card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: #adb5bd;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4 h3 {
+    margin-top: 8px;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+/* Event Backgrounds */
+.Event_background {
+  position: relative;
+  overflow: hidden; /* Ensures the pseudo-element stays within the container */
+}
+
+.Event_background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/event_space_image/img1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px); /* Adds the blur effect */
+  z-index: -1; 
+}
+.textbg{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(15px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+.Event_background {
+  width: 100%;
+}
+
+.Event_background1 {
+    height: 50vh;
+}
+
+.Event_background2 {
+    height: 80vh;
+}
+
+.Event_index {
+    color: white;
+    z-index: 1;
+}
+
+/* Work Backgrounds */
+/* .Work_background, .Work_background1 {
+    position: relative;
+    background-image: url('../images/Work/Backgrounde.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  filter: blur(10px);
+  opacity: 0.6;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.image-container.loaded img {
+  filter: blur(0);
+  opacity: 1;
+}
+
+.zoom-in:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* Position the wave at the bottom */
+.wave-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Ensure wave stays in the background */
+  }
+  .wave-background1 {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Ensure wave stays in the background */
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  /* Ensure content sits above the wave */
+  /* .container {
+    position: relative;
+    z-index: 1;
+  } */
+  
+
+/* From Uiverse.io by MikeAndrewDesigner */ 
+
+
+/* .Work_background {
+    height: 60vh;
+}
+
+.Work_background1 {
+    height: 100vh;
+} */
+
+.Work_index {
+    color: white;
+    z-index: 1;
+}
+
+/* Sticky Social Buttons */
+.sticky-social {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-social a {
+    display: flex;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sticky-social a:hover {
+    background-color: #555;
+}
+
+/* General Utility Classes */
+.hide {
+    display: none !important; /* Utility class to hide elements */
+}
+
+/* Customer */
+
+.testimonial-section .testimonial-wrapper {
+    margin-top: 60px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .testimonial-section .testimonial-wrapper {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .testimonial-section .testimonial-wrapper {
+      margin-top: 0;
+    }
+  }
+  
+  .testimonial-section .testimonial-wrapper .-mt-30 {
+    margin-top: -30px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .testimonial-section .testimonial-wrapper .-mt-30 {
+      margin-top: 0px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .testimonial-section .testimonial-wrapper .-mt-30 {
+      margin-top: 0px;
+    }
+  }
+  
+  .testimonial-section .testimonial-wrapper .-mt-60 {
+    margin-top: -60px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .testimonial-section .testimonial-wrapper .-mt-60 {
+      margin-top: 0px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .testimonial-section .testimonial-wrapper .-mt-60 {
+      margin-top: 0px;
+    }
+  }
+  
+  .testimonial-section .single-testimonial {
+    padding: 40px 30px;
+    border: 3px solid #E2E2E2;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .testimonial-section .single-testimonial:hover {
+    box-shadow: 0px 0px 40px rgba(149, 149, 149, 0.25);
+    border-color: transparent;
+  }
+  
+  .testimonial-section .single-testimonial .rating {
+    margin-bottom: 30px;
+    color: #E96A20;
+  }
+  
+  .testimonial-section .single-testimonial .rating i {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .testimonial-section .single-testimonial .content {
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-section .single-testimonial .info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .testimonial-section .single-testimonial .info .image {
+    max-width: 48px;
+    width: 100%;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .testimonial-section .single-testimonial .info .image img {
+    width: 100%;
+  }
+  
+  .testimonial-section .single-testimonial .info .text h5 {
+    font-weight: 500;
+  }
+  
+  .testimonial-section .single-testimonial .info .text p {
+    font-size: 16px;
+  }
+
+
+  /* footer section  */
+  #root {  /* or your main wrapper div */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+
+
+  .aboutBack {
+    height: 40%;
+    color: white;
+    position: relative;
+    background-image: url('../images/home/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+
+.aboutBack::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.36);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.0px);
+-webkit-backdrop-filter: blur(17.7px);
+border: 1px solid rgba(0, 0, 0, 0.43); /* Apply blur to the background */
+  z-index: 0; /* Ensure it's behind the content */
+}
+
+.content1 {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the blurred background */
+  color: white; /* Adjust text color for contrast */
+  padding: 20px;
+}
+  

@@ -186,16 +186,7 @@ function Contact() {
 
         <div className="col-md pt-5 pt-md-0" data-aos="fade-up" data-aos-duration="2500">
           <div className="rounded" style={{ width: '100%', height: '450px', overflow: 'hidden', position: 'relative' }}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9445599082073!2d73.88578847465146!3d18.486170270225198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb433f3a16e5%3A0xefbea874e52e00e5!2sFusion%20Spice%20Hospitality%20Services!5e0!3m2!1sen!2sin!4v1725172511647!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Map"
-            ></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30271.557374858658!2d73.86776403476564!3d18.48616519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb433f3a16e5%3A0xefbea874e52e00e5!2sFusion%20Spice%20Hospitality%20Services!5e0!3m2!1sen!2sin!4v1737964351676!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>

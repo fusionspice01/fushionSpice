@@ -18,7 +18,7 @@ function Footer() {
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
                         <p><a href="/" className="text-white" style={{ textDecoration: 'none' }}>Home</a></p>
-                        <p><a href="/#" className="text-white" style={{ textDecoration: 'none' }}>Menu</a></p>
+                        <p><a href="/working" className="text-white" style={{ textDecoration: 'none' }}>Working at Fusion Spice</a></p>
                         <p><a href="/about" className="text-white" style={{ textDecoration: 'none' }}>About Us</a></p>
                         <p><a href="/contact" className="text-white" style={{ textDecoration: 'none' }}>Contact</a></p>
                     </div>
@@ -27,26 +27,10 @@ function Footer() {
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
                         <p><i className="fas fa-home mr-3"></i> 205, Second floor, Winners Court, Lullanagar, Pune, Maharashtra (411040)</p>
-                        <p><i className="fas fa-envelope mr-3"></i> <a href="mailto:info@fusionspice.com" className="text-white">info@fusionspice.com</a></p>
+                        <p><i className="fas fa-envelope mr-3"></i> <a href="mailto:fusionspice.tanishq@gmail.com" className="text-white text-decoration-none">fusionspice.tanishq@gmail.com</a></p>
                         <p><i className="fas fa-phone mr-3"></i> +919371012120, +917089577790</p>
                     </div>
 
-                    {/* Social Media */}
-                    <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Follow Us</h5>
-                        <a href="/#" className="text-white me-4" aria-label="Facebook">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="/#" className="text-white me-4" aria-label="Twitter">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="/#" className="text-white me-4" aria-label="Instagram">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="/#" className="text-white me-4" aria-label="LinkedIn">
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                    </div>
                 </div>
 
                 {/* Copyright */}

@@ -238,7 +238,7 @@ function Contact() {
               </div>
               <div>
                 <h5 className="mb-1">Email Us</h5>
-                <p className="mb-0">info@example.com</p>
+                <p className="mb-0">fusionspice.tanishq@gmail.com</p>
               </div>
             </div>
           </div>
